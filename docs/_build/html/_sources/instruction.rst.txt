@@ -62,6 +62,19 @@ the webpage will then become:
 Step 2. Math formulas in LATEX
 ##############################
 
+Use command to create **latex.rst** file::
+
+   $ vim latex.rst
+
+and put the following content in **latex.rst**::
+
+   Write math formula using latex
+   ==============================
+
+   .. math::
+
+       S = \sum_{k=0}^{N} x_k
+
 Step 3. Image
 #############
 
