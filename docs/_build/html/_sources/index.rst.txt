@@ -12,10 +12,12 @@ Welcome to Pagetest2's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   instruction
    readme
    loadpy
-
-
+   math
+   modules
+   jupyter
 
 Indices and tables
 ==================
