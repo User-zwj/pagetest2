@@ -12,6 +12,7 @@ Welcome to your_project_name's documentation!
 
    latex
    loadimage
+   loadpy
 
 Indices and tables
 ==================
