@@ -75,7 +75,7 @@ and put the following content in **latex.rst**::
 
        S = \sum_{k=0}^{N} x_k
 
-Then update **index.rst** by add ``latex`` to it::
+Then update **index.rst** by adding ``latex`` to it::
 
    .. toctree::
    :maxdepth: 2
@@ -98,6 +98,39 @@ Click ``Write math formula using latex`` to access the conten, you will have
 
 Step 3. Image
 #############
+
+To add a picture, use ``.. image:: directory_of_the_picture``. To store the pictures needed, create **images** directory under **_static** directory. 
+
+First create **loadimage.rst**, and add the fllowing content to it::
+
+   Load image
+   ==========
+
+   .. image:: _static/images/image1.png
+
+Then update **index.rst** by adding ``loadimage`` to it::
+
+   .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   latex
+   loadimage
+
+
+Update the webpage and load it::
+
+   $ make html
+   $ open _build/html/index.html
+
+The image will be added to the webpage:
+
+.. image:: _static/images/web_content_image.png
+
+Click ``Load image`` to access the content, you will have
+
+.. image:: _static/images/web_image.png
+
 
 Step 4. RST syntax
 ##################
