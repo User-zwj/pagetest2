@@ -136,6 +136,14 @@ Step 4. RST syntax
 ##################
 
 
+Refer to :doc:`README file <readme>` for basic rst syntax.
+
+.. image:: _static/images/web_readme.png
+
+Click ``View page source`` on the webpage and see the command:
+
+.. image:: _static/images/web_readme_code.png
+
 Step 5. Load content from .py file
 ##################################
 
