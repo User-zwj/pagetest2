@@ -11,6 +11,7 @@ Welcome to your_project_name's documentation!
    :caption: Contents:
 
    latex
+   loadimage
 
 Indices and tables
 ==================
