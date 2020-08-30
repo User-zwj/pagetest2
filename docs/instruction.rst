@@ -147,6 +147,40 @@ Click ``View page source`` on the webpage and see the command:
 Step 5. Load content from .py file
 ##################################
 
+First create loadpy.rst, and add the fllowing content to it::
+
+   Load content from .py file
+   ==========================
+
+   This is the content from **module1.py**
+
+   .. literalinclude:: ../module1.py
+       :linenos:
+       :language: python
+
+Then update index.rst by adding ``loadpy`` to it::
+
+   .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   latex
+   loadimage
+   loadpy
+
+Update the webpage and load it::
+
+   $ make html
+   $ open _build/html/index.html
+
+The loadpy section will be added to the webpage:
+
+.. image:: _static/images/web_content_py.png
+
+Click ``Load content from .py file`` to access the content, you will have
+
+.. image:: _static/images/web_py.png
+
 Step 6. Load content from .ipynb file
 #####################################
 
