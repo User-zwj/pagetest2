@@ -1,22 +1,18 @@
-.. Pagetest2 documentation master file, created by
-   sphinx-quickstart on Fri Aug 28 11:40:18 2020.
+.. your_project_name documentation master file, created by
+   sphinx-quickstart on Sat Aug 29 17:41:42 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Pagetest2's documentation!
-=====================================
-
-.. image:: _static/images/image1.png
+Welcome to your_project_name's documentation!
+=============================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   instruction
-   readme
+   latex
+   loadimage
    loadpy
-   math
-   modules
    jupyter
 
 Indices and tables

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Load code from py file &mdash; Pagetest2 1.0 documentation</title>
+  <title>Load content from .py file &mdash; your_project_name 1.0 documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Write math formula using latex" href="math.html" />
-    <link rel="prev" title="This is the README file." href="readme.html" /> 
+    <link rel="next" title="Load content from Jupyter Notebook" href="jupyter.html" />
+    <link rel="prev" title="Load image" href="loadimage.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -54,7 +54,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Pagetest2
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> your_project_name
           
 
           
@@ -87,12 +87,10 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="instruction.html">This is the instruction file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="readme.html">This is the README file.</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Load code from py file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="math.html">Write math formula using latex</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebook Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">Write math formula using latex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loadimage.html">Load image</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Load content from .py file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Load content from Jupyter Notebook</a></li>
 </ul>
 
             
@@ -108,7 +106,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Pagetest2</a>
+          <a href="index.html">your_project_name</a>
         
       </nav>
 
@@ -139,7 +137,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Load code from py file</li>
+      <li>Load content from .py file</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,39 +180,18 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="load-code-from-py-file">
-<h1>Load code from py file<a class="headerlink" href="#load-code-from-py-file" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; here is a dummy documentation&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<div class="section" id="load-content-from-py-file">
+<h1>Load content from .py file<a class="headerlink" href="#load-content-from-py-file" title="Permalink to this headline">¶</a></h1>
+<p>This is the content from <strong>module1.py</strong></p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
+<span class="n">arr1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
 
-<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;short description of the function square</span>
-
-<span class="sd">    longish explanation: returns the square of a: :math:`a^2`</span>
-
-<span class="sd">    :param a: an input argument</span>
-
-<span class="sd">    :returns: a*a</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">a</span><span class="o">*</span><span class="n">a</span>
-
-<span class="k">assert</span> <span class="mi">4</span> <span class="o">==</span> <span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">arr1</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
 </div>
@@ -227,10 +204,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="math.html" class="btn btn-neutral float-right" title="Write math formula using latex" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="jupyter.html" class="btn btn-neutral float-right" title="Load content from Jupyter Notebook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="readme.html" class="btn btn-neutral float-left" title="This is the README file." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="loadimage.html" class="btn btn-neutral float-left" title="Load image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -240,7 +217,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Wenjuan Zhang
+        &copy; Copyright 2020, your_name
 
     </p>
   </div>

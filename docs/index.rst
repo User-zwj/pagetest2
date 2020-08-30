@@ -13,6 +13,7 @@ Welcome to your_project_name's documentation!
    latex
    loadimage
    loadpy
+   jupyter
 
 Indices and tables
 ==================
