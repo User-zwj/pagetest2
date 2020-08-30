@@ -253,6 +253,23 @@ $ open _build/html/index.html
     <span class="n">S</span> <span class="o">=</span> \<span class="n">sum_</span><span class="p">{</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="n">N</span><span class="p">}</span> <span class="n">x_k</span>
 </pre></div>
 </div>
+<p>Then update <strong>index.rst</strong> by add <code class="docutils literal notranslate"><span class="pre">latex</span></code> to it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+<span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+<span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+
+<span class="n">latex</span>
+</pre></div>
+</div>
+<p>Update the webpage and load it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
+$ open _build/html/index.html
+</pre></div>
+</div>
+<p>The latex formula will be added to the webpage:</p>
+<img alt="_images/web_content_latex.png" src="_images/web_content_latex.png" />
+<p>Click <code class="docutils literal notranslate"><span class="pre">Write</span> <span class="pre">math</span> <span class="pre">formula</span> <span class="pre">using</span> <span class="pre">latex</span></code> to access the conten, you will have</p>
+<img alt="_images/web_latex.png" src="_images/web_latex.png" />
 </div>
 <div class="section" id="step-3-image">
 <h2>Step 3. Image<a class="headerlink" href="#step-3-image" title="Permalink to this headline">¶</a></h2>

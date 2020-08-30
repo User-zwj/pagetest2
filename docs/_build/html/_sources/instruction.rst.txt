@@ -75,6 +75,27 @@ and put the following content in **latex.rst**::
 
        S = \sum_{k=0}^{N} x_k
 
+Then update **index.rst** by add ``latex`` to it::
+
+   .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   latex
+
+Update the webpage and load it::
+
+   $ make html
+   $ open _build/html/index.html
+
+The latex formula will be added to the webpage:
+
+.. image:: _static/images/web_content_latex.png
+
+Click ``Write math formula using latex`` to access the conten, you will have
+
+.. image:: _static/images/web_latex.png
+
 Step 3. Image
 #############
 
