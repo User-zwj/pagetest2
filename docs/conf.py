@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Pagetest2'
-copyright = '2020, JZ'
-author = 'JZ'
+copyright = '2020, Wenjuan Zhang'
+author = 'Wenjuan Zhang'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
