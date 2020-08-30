@@ -10,7 +10,7 @@ Welcome to your_project_name's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   latex
 
 Indices and tables
 ==================
