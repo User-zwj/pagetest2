@@ -1,0 +1,8 @@
+Load content from Ipython Notebook
+==================================
+
+This is the content from **sample.ipynb**
+
+.. toctree::
+
+   ../sample
