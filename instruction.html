@@ -245,22 +245,31 @@ $ open _build/html/index.html
 </pre></div>
 </div>
 <p>and put the following content in <strong>latex.rst</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Write</span> <span class="n">math</span> <span class="n">formula</span> <span class="n">using</span> <span class="n">latex</span>
-<span class="o">==============================</span>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="gh">Write math formula using latex</span>
+<span class="gh">==============================</span>
 
-<span class="o">..</span> <span class="n">math</span><span class="p">::</span>
+<span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
 
-    <span class="n">S</span> <span class="o">=</span> \<span class="n">sum_</span><span class="p">{</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="n">N</span><span class="p">}</span> <span class="n">x_k</span>
+    S = \sum_{k=0}^{N} x_k
 </pre></div>
-</div>
+</td></tr></table></div>
 <p>Then update <strong>index.rst</strong> by adding <code class="docutils literal notranslate"><span class="pre">latex</span></code> to it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
-<span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
-<span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+<span class="nc">:maxdepth:</span> 2
+<span class="nc">:caption:</span> Contents:
 
-<span class="n">latex</span>
+latex
 </pre></div>
-</div>
+</td></tr></table></div>
 <p>Update the webpage and load it:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
 $ open _build/html/index.html
@@ -275,21 +284,29 @@ $ open _build/html/index.html
 <h2>Step 3. Image<a class="headerlink" href="#step-3-image" title="Permalink to this headline">¶</a></h2>
 <p>To add a picture, use <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">image::</span> <span class="pre">directory_of_the_picture</span></code>. To store the pictures needed, create <strong>images</strong> directory under <strong>_static</strong> directory.</p>
 <p>First create <strong>loadimage.rst</strong>, and add the fllowing content to it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Load</span> <span class="n">image</span>
-<span class="o">==========</span>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="gh">Load image</span>
+<span class="gh">==========</span>
 
-<span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">_static</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">image1</span><span class="o">.</span><span class="n">png</span>
+<span class="p">..</span> <span class="ow">image</span><span class="p">::</span> _static/images/image1.png
 </pre></div>
-</div>
+</td></tr></table></div>
 <p>Then update <strong>index.rst</strong> by adding <code class="docutils literal notranslate"><span class="pre">loadimage</span></code> to it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
-<span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
-<span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+<span class="nc">:maxdepth:</span> 2
+<span class="nc">:caption:</span> Contents:
 
-<span class="n">latex</span>
-<span class="n">loadimage</span>
+latex
+loadimage
 </pre></div>
-</div>
+</td></tr></table></div>
 <p>Update the webpage and load it:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
 $ open _build/html/index.html
@@ -310,26 +327,39 @@ $ open _build/html/index.html
 <div class="section" id="step-5-load-content-from-py-file">
 <h2>Step 5. Load content from .py file<a class="headerlink" href="#step-5-load-content-from-py-file" title="Permalink to this headline">¶</a></h2>
 <p>First create loadpy.rst, and add the fllowing content to it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Load</span> <span class="n">content</span> <span class="kn">from</span> <span class="nn">.py</span> <span class="n">file</span>
-<span class="o">==========================</span>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="gh">Load content from .py file</span>
+<span class="gh">==========================</span>
 
-<span class="n">This</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">content</span> <span class="kn">from</span> <span class="o">**</span><span class="n">module1</span><span class="o">.</span><span class="n">py</span><span class="o">**</span>
+This is the content from <span class="gs">**module1.py**</span>
 
-<span class="o">..</span> <span class="n">literalinclude</span><span class="p">::</span> <span class="o">../</span><span class="n">module1</span><span class="o">.</span><span class="n">py</span>
-    <span class="p">:</span><span class="n">linenos</span><span class="p">:</span>
-    <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python</span>
+<span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> ../module1.py
+    <span class="nc">:linenos:</span>
+    <span class="nc">:language:</span> python
 </pre></div>
-</div>
+</td></tr></table></div>
 <p>Then update index.rst by adding <code class="docutils literal notranslate"><span class="pre">loadpy</span></code> to it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
-<span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
-<span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+<span class="nc">:maxdepth:</span> 2
+<span class="nc">:caption:</span> Contents:
 
-<span class="n">latex</span>
-<span class="n">loadimage</span>
-<span class="n">loadpy</span>
+latex
+loadimage
+loadpy
 </pre></div>
-</div>
+</td></tr></table></div>
 <p>Update the webpage and load it:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
 $ open _build/html/index.html
@@ -342,6 +372,62 @@ $ open _build/html/index.html
 </div>
 <div class="section" id="step-6-load-content-from-ipynb-file">
 <h2>Step 6. Load content from .ipynb file<a class="headerlink" href="#step-6-load-content-from-ipynb-file" title="Permalink to this headline">¶</a></h2>
+<p>Put <strong>sample.ipynb</strong> in <strong>docs</strong> directory. Create jupyter.rst, and add the fllowing content to it:</p>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="gh">Load content from Jupyter Notebook</span>
+<span class="gh">==================================</span>
+
+<span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+
+   sample
+</pre></div>
+</td></tr></table></div>
+<p>Then update index.rst by adding jupyter to it:</p>
+<div class="highlight-rst notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+<span class="nc">:maxdepth:</span> 2
+<span class="nc">:caption:</span> Contents:
+
+latex
+loadimage
+loadpy
+jupyter
+</pre></div>
+</td></tr></table></div>
+<p>Update the extension in <strong>conf.py</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.coverage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.mathjax&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.githubpages&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx_rtd_theme&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nbsphinx&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Update the webpage and load it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make html
+$ opoen _build/html/index.html
+</pre></div>
+</div>
+<p>The jupyter section will be added to the webpage:</p>
+<img alt="_images/web_content_jupyter.png" src="_images/web_content_jupyter.png" />
+<p>Click <code class="docutils literal notranslate"><span class="pre">Normal</span> <span class="pre">Samples</span></code> to access the content, you will have</p>
+<img alt="_images/web_jupyter.png" src="_images/web_jupyter.png" />
 </div>
 </div>
 

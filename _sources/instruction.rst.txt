@@ -23,6 +23,7 @@ Sphinx startup::
 
 Once using ``$ sphinx-quickstart`` command, you will need to customize it::
 
+
    > Separate source and build directories (y/n) [n]: n
    > Project name: your_project_name
    > Author name(s): your_name
@@ -66,7 +67,10 @@ Use command to create **latex.rst** file::
 
    $ vim latex.rst
 
-and put the following content in **latex.rst**::
+and put the following content in **latex.rst**:
+
+.. code-block:: rst
+   :linenos:
 
    Write math formula using latex
    ==============================
@@ -75,7 +79,10 @@ and put the following content in **latex.rst**::
 
        S = \sum_{k=0}^{N} x_k
 
-Then update **index.rst** by adding ``latex`` to it::
+Then update **index.rst** by adding ``latex`` to it:
+
+.. code-block:: rst
+   :linenos:
 
    .. toctree::
    :maxdepth: 2
@@ -101,14 +108,20 @@ Step 3. Image
 
 To add a picture, use ``.. image:: directory_of_the_picture``. To store the pictures needed, create **images** directory under **_static** directory. 
 
-First create **loadimage.rst**, and add the fllowing content to it::
+First create **loadimage.rst**, and add the fllowing content to it:
+
+.. code-block:: rst
+   :linenos:
 
    Load image
    ==========
 
    .. image:: _static/images/image1.png
 
-Then update **index.rst** by adding ``loadimage`` to it::
+Then update **index.rst** by adding ``loadimage`` to it:
+
+.. code-block:: rst
+   :linenos:
 
    .. toctree::
    :maxdepth: 2
@@ -147,7 +160,10 @@ Click ``View page source`` on the webpage and see the command:
 Step 5. Load content from .py file
 ##################################
 
-First create loadpy.rst, and add the fllowing content to it::
+First create loadpy.rst, and add the fllowing content to it:
+
+.. code-block:: rst
+   :linenos:
 
    Load content from .py file
    ==========================
@@ -158,7 +174,10 @@ First create loadpy.rst, and add the fllowing content to it::
        :linenos:
        :language: python
 
-Then update index.rst by adding ``loadpy`` to it::
+Then update index.rst by adding ``loadpy`` to it:
+
+.. code-block:: rst
+   :linenos:
 
    .. toctree::
    :maxdepth: 2
@@ -184,3 +203,56 @@ Click ``Load content from .py file`` to access the content, you will have
 Step 6. Load content from .ipynb file
 #####################################
 
+Put **sample.ipynb** in **docs** directory. Create jupyter.rst, and add the fllowing content to it:
+
+.. code-block:: rst
+   :linenos:
+
+   Load content from Jupyter Notebook
+   ==================================
+
+   .. toctree::
+
+      sample
+
+Then update index.rst by adding jupyter to it:
+
+.. code-block:: rst
+   :linenos:
+
+   .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   latex
+   loadimage
+   loadpy
+   jupyter
+
+Update the extension in **conf.py**::
+
+   extensions = [
+       'sphinx.ext.autodoc',
+       'sphinx.ext.todo',
+       'sphinx.ext.intersphinx',
+       'sphinx.ext.coverage',
+       'sphinx.ext.mathjax',
+       'sphinx.ext.viewcode',
+       'sphinx.ext.githubpages',
+       'sphinx.ext.napoleon',
+       'sphinx_rtd_theme',
+       'nbsphinx',
+   ]
+
+Update the webpage and load it::
+
+   $ make html
+   $ opoen _build/html/index.html
+
+The jupyter section will be added to the webpage:
+
+.. image:: _static/images/web_content_jupyter.png
+
+Click ``Normal Samples`` to access the content, you will have
+
+.. image:: _static/images/web_jupyter.png
