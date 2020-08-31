@@ -203,7 +203,7 @@ Click ``Load content from .py file`` to access the content, you will have
 Step 6. Load content from .ipynb file
 #####################################
 
-Put **sample.rst** in **docs** directory. Create jupyter.rst, and add the fllowing content to it:
+Put **sample.ipynb** in **docs** directory. Create jupyter.rst, and add the fllowing content to it:
 
 .. code-block:: rst
    :linenos:
