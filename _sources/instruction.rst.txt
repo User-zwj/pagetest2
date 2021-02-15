@@ -1,7 +1,7 @@
 This is the instruction file
 ============================
 
-Follow the steps below will help have a basic understanding of Sphinx building. 
+Follow the steps below will help have a basic understanding of Sphinx building.
 
 Step 1. Package Install and Preparations
 ########################################
@@ -34,7 +34,12 @@ You will later have the directory shown below:
 
 .. image:: _static/images/directory.png
 
-Use the code below to setup the webpage:
+Use the code below to setup the webpage::
+
+   $ make html
+   $ open _build/html/index.html
+
+you will see
 
 .. image:: _static/images/web_start.png
 
@@ -106,7 +111,7 @@ Click ``Write math formula using latex`` to access the conten, you will have
 Step 3. Image
 #############
 
-To add a picture, use ``.. image:: directory_of_the_picture``. To store the pictures needed, create **images** directory under **_static** directory. 
+To add a picture, use ``.. image:: directory_of_the_picture``. To store the pictures needed, create **images** directory under **_static** directory.
 
 First create **loadimage.rst**, and add the fllowing content to it:
 
